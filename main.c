@@ -42,13 +42,13 @@ int main()
 
     while (k < 8)
     {
-        bit = buffer[k] & 1;
-        result = result | (bit << pos);
+        bit = buffer[k] & 1; // Get the LSB bit.
+        result = result | (bit << pos); // Store it into one.
         k++;
         pos--;
     }
 
-    printf("Information =====> %c\n",result);
+    printf("Information =====> %c\n",result); // Print the information.
     
 
     return 0;
